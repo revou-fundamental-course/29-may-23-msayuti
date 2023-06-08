@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/index.css" />
+
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <div class="container">
+        <h1><a href="index.html">ROTAMA Service</a></h1>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Our Profil</a></li>
+          <li><a href="#">Portofolio</a></li>
+          <li><a href="#form">Message Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- banner -->
+
+    <section class="banner" id="card">
+      <h2>Hi <span id="nama"></span>, Welcome To My Website<br />
+        <br> Solusi Konsultasi da perbaikan<br> Segala Keruksakan Yang Terjadi <br> Pada Alat atau Barang Elektronik Anda</p></h2>
+    </section>
+
+    <section class="about" id="card">
+      <h3>About</h3>
+      <p>
+        <strong>ROTAMA Service</strong> adalah perusahaan yang bergerak di
+        bidang jasa yang melayani custumer untuk konsultasi dan perbaikan alat
+        elektronik seperti Televisi, Air Conditioner dan alat elektronik
+        lainnya. ROTAMA Service juga merupakan perusahaan terbesar di bidang
+        jasa servis elektronik yang ada di Daerah Jampang Kulon - Sukabumi
+      </p>
+    </section>
+
+    <section class="service" id="card">
+      <div class="container">
+        <h3>Service</h3>
+        <div class="box">
+          <div class="col-4">
+            <div class="icon">TV</i></div>
+            <h4>Televisi</h4>
+          </div>
+          <div class="col-4">
+            <div class="icon">K</div>
+            <h4>Kulkas</h4>
+          </div>
+          <div class="col-4">
+            <div class="icon">AC</div>
+            <h4>Air Conditioner</h4>
+          </div>
+          <div class="col-4">
+            <div class="icon">MC</div>
+            <h4>Mesin Cuci</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form">
+      <div id="message-us-section" class="message-us">
+        <h3>Message Us</h3>
+        <form
+          class="message-form"
+          name="message-form"
+          onsubmit="return validateForm()"
+        >
+          <table>
+            <tr>
+              <td><label for="full-name">Nama</label></td>
+              <td>:</td>
+              <td><input type="text" name="full-name" /></td>
+            </tr>
+            <tr>
+              <td><label for="birth-date">Tanggal Lahir</label></td>
+              <td>:</td>
+              <td><input type="date" name="birth-date" /></td>
+            </tr>
+            <tr>
+              <td><label for="gender">Jenis Kelamin</label></td>
+              <td>:</td>
+              <td>
+                <input type="radio" name="gender" value="Laki-Laki" /><label
+                  for="Laki-Laki"
+                  >Laki-Laki</label
+                >
+                <input type="radio" name="gender" value="Perempuan" /><label
+                  for="Perempuan"
+                  >Perempuan</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><label for="messages">Pesan</label></td>
+              <td>:</td>
+              <td><textarea name="messages" cols="30" rows="3"></textarea></td>
+            </tr>
+            <tr>
+              <td rowspan="2">
+                <button type="submit" name="submit" value="submit">
+                  Submit
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+
+      <div class="form-output">
+        <table>
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td><span id="sender-full-name"></span></td>
+          </tr>
+          <tr>
+            <td>Tanggal Lahir</td>
+            <td>:</td>
+            <td><span id="sender-birth-date"></span></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td><span id="sender-gender"></span></td>
+          </tr>
+          <tr>
+            <td>Pesan</td>
+            <td>:</td>
+            <td><span id="sender-messages"></span></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <div class="clear"></div>
+
+    <footer>
+      <div class="container">
+        <small>Copyright &copy; 2023 - Sayuti. All Right Reserved.</small>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>
