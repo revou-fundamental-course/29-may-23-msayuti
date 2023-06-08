@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsla(169, 44%, 78%, 0.5);
+}
+header {
+  background-color: lightslategray;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header h1 {
+  float: left;
+  padding: 5px 0;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #1bec3e;
+}
+
+header ul {
+  float: right;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+header ul li a:hover {
+  color: #fff;
+  background-color: #148f77;
+}
+
+.active {
+  color: #fff;
+  background-color: #148f77;
+}
+
+.banner {
+  height: 578px;
+  width: 100%;
+  background-image: url(../img/imagess.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 143, 119, 0.5);
+}
+
+.banner h2 {
+  color: #fff;
+  z-index: 1;
+  border: 3px solid #fff;
+  padding: 20px 25px;
+}
+
+#card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  margin-top: 15px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section h3 {
+  text-align: center;
+  padding: 25px 0;
+  color: #148f77;
+  margin-bottom: 20px;
+}
+
+.about {
+  background-color: #efefef;
+  padding-bottom: 100px;
+}
+.about p {
+  padding: 10px 50px;
+  text-align: center;
+  color: #666;
+  word-spacing: 2px;
+  line-height: 25px;
+}
+
+.service {
+  padding-bottom: 100px;
+}
+
+.box {
+  color: #148f77;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box .col-4 {
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.box .col-4 h4 {
+  margin: 20px 0;
+}
+
+footer {
+  padding: 30px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* form */
+
+.form-output {
+  margin-bottom: 20px;
+  float: right;
+  margin-right: 100px;
+  padding: 20px;
+  border: 2px solid black;
+  width: 300px;
+}
+
+.message-us {
+  margin: 30px 20px;
+}
+.message-form {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    width: 90%;
+  }
+  header h1 {
+    text-align: center;
+    float: none;
+  }
+  header ul {
+    text-align: center;
+    float: none;
+  }
+  .box .col-4 {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .message-form {
+    float: none;
+  }
+
+  .form-output {
+    margin: 20px;
+    float: none;
+  }
+}
